@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Side Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <base href="./index.html"> -->
+
+</head>
+<body>
+    <nav class="navbar" id="open">
+        <span class="open-slide">
+          <a href="#"  onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#a00"
+                stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#a00"
+                stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#a00"
+                stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <li><a href="#" id="help">Help</a></li>
+            <li><a href="#" id="about">About</a></li>
+        </ul>
+    </nav>
+
+<!-- NEED To LINK main.js to this file-->    
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <h2>OLD TESTAMENT</h2>
+        <a href="#" class="bible-a-tag" id="genesis">Genesis</a>
+        <a href="#" class="bible-a-tag" id="exodus">Exodus</a>
+        <a href="#" class="bible-a-tag" id="leviticus">Leviticus</a>
+        <a href="#" class="bible-a-tag" id="numbers">Numbers</a>
+        <a href="#" class="bible-a-tag" id="deuteronomy">Deuteronomy</a>
+        <a href="#" class="bible-a-tag" id="joshua">Joshua</a>
+        <a href="#" class="bible-a-tag" id="judges">Judges</a>
+        <a href="#" class="bible-a-tag" id="ruth">Ruth</a>
+        <a href="#" class="bible-a-tag" id="samuel1">1st Samuel</a>
+        <a href="#" class="bible-a-tag" id="samuel2">2nd Samuel</a>
+        <a href="#" class="bible-a-tag" id="kings1">1st Kings</a>
+        <a href="#" class="bible-a-tag" id="kings2">2nd Kings</a>
+        <a href="#" class="bible-a-tag" id="chronicles1">1st Chronicles</a>
+        <a href="#" class="bible-a-tag" id="chronicles2">2nd Chronicles</a>
+        <a href="#" class="bible-a-tag" id="ezra">Ezra</a>
+        <a href="#" class="bible-a-tag" id="nehemiah">Nehemiah</a>
+        <a href="#" class="bible-a-tag" id="esther">Esther</a>
+        <a href="#" class="bible-a-tag" id="job">Job</a>
+        <a href="#" class="bible-a-tag" id="psalms">Psalms</a>
+        <a href="#" class="bible-a-tag" id="proverbs">Proverbs</a>
+        <a href="#" class="bible-a-tag" id="ecclesiastes">Ecclesiastes</a>
+        <a href="#" class="bible-a-tag" id="solomon">Song of Solomon</a>
+        <a href="#" class="bible-a-tag" id="isaiah">Isaiah</a>
+        <a href="#" class="bible-a-tag" id="jeremiah">Jeremiah</a>
+        <a href="#" class="bible-a-tag" id="lamentations">Lamentations</a>
+        <a href="#" class="bible-a-tag" id="ezekiel">Ezekiel</a>
+        <a href="#" class="bible-a-tag" id="daniel">Daniel</a>
+        <a href="#" class="bible-a-tag" id="hosea">Hosea</a>
+        <a href="#" class="bible-a-tag" id="joel">Joel</a>
+        <a href="#" class="bible-a-tag" id="amos">Amos</a>
+        <a href="#" class="bible-a-tag" id="obadiah">Obadiah</a>
+        <a href="#" class="bible-a-tag" id="jonah">Jonah</a>
+        <a href="#" class="bible-a-tag" id="micah">Micah</a>
+        <a href="#" class="bible-a-tag" id="nahum">Nahum</a>
+        <a href="#" class="bible-a-tag" id="habakkuk">Habakkuk</a>
+        <a href="#" class="bible-a-tag" id="zephaniah">Zephaniah</a>
+        <a href="#" class="bible-a-tag" id="haggai">Haggai</a>
+        <a href="#" class="bible-a-tag" id="zechariah">Zechariah</a>
+        <a href="#" class="bible-a-tag" id="malachi">Malachi</a>
+
+        <h2>NEW TESTAMENT</h2>
+        <a href="#" class="bible-a-tag" id="matthew">Matthew</a>
+        <a href="#" class="bible-a-tag" id="mark">Mark</a>
+        <a href="#" class="bible-a-tag" id="luke">Luke</a>
+        <a href="#" class="bible-a-tag" id="john">John</a>
+        <a href="#" class="bible-a-tag" id="acts">Acts</a>
+        <a href="#" class="bible-a-tag" id="romans">Romans</a>
+        <a href="#" class="bible-a-tag" id="corinthians1">1st Corinthians</a>
+        <a href="#" class="bible-a-tag" id="corinthians2">2nd Corinthians</a>
+        <a href="#" class="bible-a-tag" id="galatians">Galatians</a>
+        <a href="#" class="bible-a-tag" id="ephesians">Ephesians</a>
+        <a href="#" class="bible-a-tag" id="philippians">Philippians</a>
+        <a href="#" class="bible-a-tag" id="colossians">Colossians</a>
+        <a href="#" class="bible-a-tag" id="thessalonians1">1st Thessalonians</a>
+        <a href="#" class="bible-a-tag" id="thessalonians2">2nd Thessalonians</a>
+        <a href="#" class="bible-a-tag" id="timothy1">1st Timothy</a>
+        <a href="#" class="bible-a-tag" id="timothy2">2nd Timothy</a>
+        <a href="#" class="bible-a-tag" id="titus">Titus</a>
+        <a href="#" class="bible-a-tag" id="philemon">Philemon</a>
+        <a href="#" class="bible-a-tag" id="hebrews">Hebrews</a>
+        <a href="#" class="bible-a-tag" id="james">James</a>
+        <a href="#" class="bible-a-tag" id="peter1">1st Peter</a>
+        <a href="#" class="bible-a-tag" id="peter2">2nd Peter</a>
+        <a href="#" class="bible-a-tag" id="john1">1st John</a>
+        <a href="#" class="bible-a-tag" id="john2">2nd John</a>
+        <a href="#" class="bible-a-tag" id="john3">3rd John</a>
+        <a href="#" class="bible-a-tag" id="jude">Jude</a>
+        <a href="#" class="bible-a-tag" id="revelation">Revelation</a>
+
+        <br></br>
+        <br></br>
+        <br></br>
+    </div>
+
+    <div id="main">
+        <div><h2 id="memory-title">KJV Bible Memory:</h2><h1 id="title"></h1></div>
+        <div id="chapter-section"></div>
+        <span id="back-div"><a href="#" id="back-link">BACK</a></span>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <script type="text/javascript" src="js/bible/Genesis.js"></script>
+        <script type="text/javascript" src="js/bible/Exodus.js" ></script>
+        <script type="text/javascript" src="js/bible/Leviticus.js"></script>
+        <script type="text/javascript" src="js/bible/Numbers.js"></script>
+        <script type="text/javascript" src="js/bible/Deuteronomy.js"></script>
+        <script type="text/javascript" src="js/bible/Joshua.js"></script>
+        <script type="text/javascript" src="js/bible/Judges.js"></script>
+        <script type="text/javascript" src="js/bible/Ruth.js"></script>
+        <script type="text/javascript" src="js/bible/1st Samuel.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Samuel.js"></script>
+        <script type="text/javascript" src="js/bible/1st Kings.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Kings.js"></script>
+        <script type="text/javascript" src="js/bible/1st Chronicles.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Chronicles.js"></script>    
+        <script type="text/javascript" src="js/bible/Ezra.js"></script> 
+        <script type="text/javascript" src="js/bible/Nehemiah.js"></script> 
+        <script type="text/javascript" src="js/bible/Esther.js"></script>
+        <script type="text/javascript" src="js/bible/Job.js"></script>
+        <script type="text/javascript" src="js/bible/Psalms.js"></script>
+        <script type="text/javascript" src="js/bible/Proverbs.js"></script>
+        <script type="text/javascript" src="js/bible/Ecclesiastes.js"></script>  
+        <script type="text/javascript" src="js/bible/Song of Solomon.js"></script>  
+        <script type="text/javascript" src="js/bible/Isaiah.js"></script> 
+        <script type="text/javascript" src="js/bible/Jeremiah.js"></script>
+        <script type="text/javascript" src="js/bible/Lamentations.js"></script>
+        <script type="text/javascript" src="js/bible/Ezekiel.js"></script>
+        <script type="text/javascript" src="js/bible/Daniel.js"></script>
+        <script type="text/javascript" src="js/bible/Hosea.js"></script>  
+        <script type="text/javascript" src="js/bible/Joel.js"></script>  
+        <script type="text/javascript" src="js/bible/Amos.js"></script> 
+        <script type="text/javascript" src="js/bible/Obadiah.js"></script>
+        <script type="text/javascript" src="js/bible/Jonah.js"></script>
+        <script type="text/javascript" src="js/bible/Micah.js"></script>
+        <script type="text/javascript" src="js/bible/Nahum.js"></script>
+        <script type="text/javascript" src="js/bible/Habakkuk.js"></script>  
+        <script type="text/javascript" src="js/bible/Zephaniah.js"></script>  
+        <script type="text/javascript" src="js/bible/Haggai.js"></script>
+        <script type="text/javascript" src="js/bible/Zechariah.js"></script>
+        <script type="text/javascript" src="js/bible/Malachi.js"></script>
+        
+        <script type="text/javascript" src="js/bible/Matthew.js"></script>  
+        <script type="text/javascript" src="js/bible/Mark.js"></script>  
+        <script type="text/javascript" src="js/bible/Luke.js"></script> 
+        <script type="text/javascript" src="js/bible/John.js"></script>
+        <script type="text/javascript" src="js/bible/Acts.js"></script>
+        <script type="text/javascript" src="js/bible/Romans.js"></script>
+        <script type="text/javascript" src="js/bible/1st Corinthians.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Corinthians.js"></script>  
+        <script type="text/javascript" src="js/bible/Galatians.js"></script>  
+        <script type="text/javascript" src="js/bible/Ephesians.js"></script>  
+        <script type="text/javascript" src="js/bible/Philippians.js"></script>  
+        <script type="text/javascript" src="js/bible/Colossians.js"></script> 
+        <script type="text/javascript" src="js/bible/1st Thessalonians.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Thessalonians.js"></script>
+        <script type="text/javascript" src="js/bible/1st Timothy.js"></script>
+        <script type="text/javascript" src="js/bible/2nd Timothy.js"></script>
+        <script type="text/javascript" src="js/bible/Titus.js"></script>  
+        <script type="text/javascript" src="js/bible/Philemon.js"></script>  
+        <script type="text/javascript" src="js/bible/Hebrews.js"></script>
+        <script type="text/javascript" src="js/bible/James.js"></script>
+        <script type="text/javascript" src="js/bible/1st Peter.js"></script> 
+        <script type="text/javascript" src="js/bible/2nd Peter.js"></script>  
+        <script type="text/javascript" src="js/bible/1st John.js"></script>
+        <script type="text/javascript" src="js/bible/2nd John.js"></script>  
+        <script type="text/javascript" src="js/bible/3rd John.js"></script>  
+        <script type="text/javascript" src="js/bible/Jude.js"></script>
+        <script type="text/javascript" src="js/bible/Revelation.js"></script> 
+       
+        
+        
+    </div>
+
+    <!-- <button id="open" onclick="openModal()">Open Modal</button> -->
+    <div class="modal">
+        <div class="modal-content">
+            <!-- <button onclick="closeModal()">Close Modal</button> -->
+            <span class="close-button">&times;</span>
+           <!---- <h1 id="model-text">  </h1> -->
+        </div>
+    </div>  
+
+    
+    <script type="text/javascript" src="js/main6.js"></script>
+
+    <script>
+
+        //Get the TOP button DOM location:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 100px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        // Function that shows or hides TOP button
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        } 
+
+        function openSlideMenu(){
+            //event.stopPropagation();
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+            
+        }
+
+        function closeSlideMenu(){
+            //event.stopPropagation();
+            var elm = document.getElementById('main');
+            var y = elm.scrollTop;
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+    
+            return false;
+        }
+
+        /*
+        function closeModal() {
+            document.querySelector('.modal').style.display = 'none';
+        } */
+   
+    </script>
+    
+    
+</body>
+</html>

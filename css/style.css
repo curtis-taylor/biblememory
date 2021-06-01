@@ -1,0 +1,416 @@
+body {
+   font-family: "Arial", serif; 
+  /* background-color: #f4f4f4; */
+   background-color:#111;
+   overflow-x: hidden;
+}
+
+
+#main{
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 90%;
+}
+
+#title {
+    font-size: 300%;
+    font-weight: bold;
+    color: cornsilk;
+}
+
+
+#counter {
+    font-size: 300%; 
+    position: fixed; /* Fixed/sticky position */
+    bottom: 150px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    opacity: 0.5;
+    font-weight: bolder;
+    margin: 0 auto;
+    color: ivory;
+
+}
+
+
+#memory-title {
+    color:crimson;
+} 
+
+#chapter-section {
+    display:inline;
+    font-weight: bold;
+    font-size: 120%;
+    width: 85%;
+    white-space:pre;
+
+}
+
+#chapter-section a:link {
+    color: cornsilk;
+}
+
+#chapter-section a:visited {
+    color: cornsilk;
+}
+
+#chapter-section-title {
+    width: 85%;
+    color: crimson;
+    font-size: 120%;
+}
+
+
+#back-div {
+    font-size: 180%;
+    display: none;
+    font-weight:500;
+}
+
+#back-div a:link {
+    color:mintcream;
+}
+
+#back-div a:visited {
+    color:mintcream;
+}
+
+/* For go to Top button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+#about-info img {
+    width: 50px;
+}
+
+#help-info img {
+    width: 80%;
+}
+
+
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}  
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content footer{
+    font-style: italic;
+    text-align: center;
+}
+
+/*
+.info_img {
+    width: 100%;
+}
+
+.img_img {
+    width: 50px;
+} */
+
+.navbar {
+    background-color: #3b5998;
+    overflow: hidden;
+    height: 63px;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav h2 {
+    color: #b00;
+    padding: 10px;
+
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top:0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.dynamic-div {
+    border-radius: 20px;
+    background-color:darkblue;
+    color:gold;
+    font-weight:bolder;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size:x-large;
+
+}
+
+.verse-mode {
+    font-size:xx-large;
+    border-radius: 20px;
+    background-color:darkblue;
+    color:gold;
+    font-weight:bolder;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.dynamic-a {
+    color: #ccc;
+    padding: 0%;
+    float:none;
+    text-decoration: none;
+}
+
+.dynamic-a:hover {
+    color:ghostwhite;
+    text-decoration:underline;
+}
+
+.full_modal_content {
+    padding: 0px;
+    display: inline;
+}
+
+.blank_modal_content {
+    display: none;
+}
+
+.first_modal_content {
+    display: none;
+}
+
+.chapter-div {
+    font-size:xx-large;
+    font-weight: bold;
+    color:crimson;
+}
+
+
+
+@media(max-width:1000px) {
+   /* .navbar-nav{display: none;} */
+}
+
+@media(max-width:780px) {  
+  /*  .open-slide{display: none;} */
+
+  #memory-title {
+    font-size: 110%;
+  }  
+
+  #chapter-section {
+    display: inline;
+    font-weight: bold;
+    font-size: 100%;
+    width: 70%;
+  }
+
+  /* For go to Top button */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:crimson; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.8;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  
+
+  #about-info img{
+    width: 40px;
+  }
+
+  #help-info img{
+    width: 95%;
+  }
+
+
+    .dynamic-div {
+        border-radius: 20px;
+        background-color:darkblue;
+        color:gold;
+        font-weight:bolder;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size:130%;
+
+    }
+
+    .verse-mode {
+        font-size:x-large;
+        border-radius: 20px;
+        background-color:darkblue;
+        color:gold;
+        font-weight:bolder;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 17rem;
+        border-radius: 0.5rem;
+    }
+
+
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    
+}
