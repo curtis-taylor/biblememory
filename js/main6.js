@@ -40,24 +40,24 @@ open_check.addEventListener("click", function(e)  {
         //e.stopPropagation();
         e.stopImmediatePropagation();
         
-
-        if(div.hasChildNodes()) {
-            let q = document.querySelectorAll('.dynamic-a');
-            for(let i = 0; i < q.length; i++) {
-                q[i].removeEventListener("click", test_layout);
-                console.log("remove temp link listeners");
+         if(document.getElementById('open-slide').style.display != 'none') {
+            if(div.hasChildNodes()) {
+                let q = document.querySelectorAll('.dynamic-a');
+                for(let i = 0; i < q.length; i++) {
+                    q[i].removeEventListener("click", test_layout);
+                    console.log("remove temp link listeners");
+                }
             }
-        }
 
-        if(div3.hasChildNodes()){
-            div3.style.visibility = 'hidden';
-        }
+            if(div3.hasChildNodes()){
+                div3.style.visibility = 'hidden';
+            }
 
-        for (let i = 0; i < aTag_array.length; i++) {
-            console.log("open_check");
-            aTag_array[i].addEventListener("click", test_layout);
-        };
-    
+            for (let i = 0; i < aTag_array.length; i++) {
+                console.log("open_check");
+                aTag_array[i].addEventListener("click", test_layout);
+            };
+        }
     
 }, false);  
 
@@ -105,22 +105,23 @@ back_div.addEventListener("click", function(e) {
     //e.stopPropagation();
     e.stopImmediatePropagation();
 
-    console.log("back_check");
-    div3.style.display = "inline";
-    div.style.display = "inline";
+    if(back_div.style.display == 'inline') {
+        console.log("back_check");
+        div3.style.display = "inline";
+        div.style.display = "inline";
+        document.getElementById('open-slide').style.display = "inline";
+        back_div.style.display = "none";
 
-    back_div.style.display = "none";
-
-    memory_title.textContent = "KJV Bible Memory: NORMAL";
-    
-    if(div2.hasChildNodes()){
-        while(div2.firstChild) {
-            //div2.firstChild.removeEventListener("click", test_layout);
-            div2.removeChild(div2.firstChild);
-            console.log("removerssssss");
-        }  
-    }   
-    
+        memory_title.textContent = "KJV Bible Memory: NORMAL";
+        
+        if(div2.hasChildNodes()){
+            while(div2.firstChild) {
+                //div2.firstChild.removeEventListener("click", test_layout);
+                div2.removeChild(div2.firstChild);
+                console.log("removerssssss");
+            }  
+        }   
+    }
 }, false);
 
 
@@ -900,6 +901,8 @@ function toggleVerse(e) {
 
         memory_title.textContent = "KJV Bible Memory: CYCLE " + cycle_count;  
 
+        document.getElementById('open-slide').style.display = "none";
+
         let idTimer = setInterval(() => {
            
             // Checks if cycle mode on and if not, should stop idTimer
@@ -1124,7 +1127,7 @@ function toggleModal(e) {
 
         t1 = "<div><h2>KJV Bible Memory</h2></div><hr class='rounded'>";
         t2 = "<h5>KJV Bible Memory version 1.0</h5><h4><u>Contact Info:</u> </h4><h4>DESIGNER: Curtis Taylor</h4>";
-        t3 = "<p id='about-info'><a href='mailto:curtis.t@gmail.com'><img src='images/fancy_mail.png' alt='curtis.t@gmail.com'/></a><br></br><a href='https://www.linkedin.com/in/curtis-taylor-developer-qa-tester-84964a10/'><img src='images/LI-In-Bug.png' alt='https://www.linkedin.com/in/curtis-taylor-developer-qa-tester-84964a10/'/></a></p><hr class='rounded'>";
+        t3 = "<p id='about-info'><a href='mailto:curtis.t@gmail.com?subject=Bible App related comment'><img src='images/fancy_mail.png' alt='curtis.t@gmail.com'/></a><br></br><a href='https://www.linkedin.com/in/curtis-taylor-developer-qa-tester-84964a10/' target='blank'><img src='images/LI-In-Bug.png' alt='https://www.linkedin.com/in/curtis-taylor-developer-qa-tester-84964a10/'/></a></p><hr class='rounded'>";
         t4 = "<footer> Created 2021    </footer>";
        
         modal_h1_div.innerHTML = t1 + t2 + t3 + t4;
