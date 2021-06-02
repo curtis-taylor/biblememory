@@ -13,15 +13,19 @@ body {
     width: 90%;
 }
 
+#memory-title {
+    font-size: 220%;
+}  
+
 #title {
-    font-size: 300%;
+    font-size: 400%;
     font-weight: bold;
     color: cornsilk;
 }
 
 
 #counter {
-    font-size: 300%; 
+    font-size: 310%; 
     position: fixed; /* Fixed/sticky position */
     bottom: 150px; /* Place the button at the bottom of the page */
     right: 10px; /* Place the button 30px from the right */
@@ -64,7 +68,7 @@ body {
 
 
 #back-div {
-    font-size: 180%;
+    font-size: 200%;
     display: none;
     font-weight:500;
 }
@@ -295,11 +299,18 @@ hr.rounded {
 
 
 @media(max-width:1000px) {
-   /* .navbar-nav{display: none;} */
+   /* .navbar-nav{display: none;} */ 
+    
 }
 
 @media(max-width:780px) {  
   /*  .open-slide{display: none;} */
+
+ #title {
+    font-size: 230%;
+    font-weight: bold;
+    color: cornsilk;
+ }
 
   #memory-title {
     font-size: 110%;
