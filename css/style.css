@@ -14,20 +14,31 @@ body {
 }
 
 #memory-title {
-    font-size: 220%;
+    font-size: 320%;
 }  
 
 #title {
-    font-size: 400%;
+    font-size: 550%;
     font-weight: bold;
     color: cornsilk;
 }
 
+#help {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#about {
+    font-size: large;
+    font-weight: bolder;
+}
+
+
 
 #counter {
-    font-size: 310%; 
+    font-size: 410%; 
     position: fixed; /* Fixed/sticky position */
-    bottom: 150px; /* Place the button at the bottom of the page */
+    bottom: 250px; /* Place the button at the bottom of the page */
     right: 10px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -46,7 +57,7 @@ body {
 #chapter-section {
     display:inline;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 180%;
     width: 85%;
     white-space:pre;
 
@@ -85,7 +96,7 @@ body {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
+    bottom: 200px; /* Place the button at the bottom of the page */
     right: 20px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -111,6 +122,10 @@ body {
     width: 80%;
 }
 
+.bible-a-tag {
+    font-size: x-large;
+
+}
 
 
 /* Rounded border */
@@ -220,7 +235,7 @@ hr.rounded {
 .side-nav a {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 23px;
     color: #ccc;
     display: block;
     transition: 0.3s;
@@ -251,12 +266,12 @@ hr.rounded {
     font-weight:bolder;
     padding-left: 20px;
     padding-bottom: 10px;
-    font-size:x-large;
+    font-size:300%;
 
 }
 
 .verse-mode {
-    font-size:xx-large;
+    font-size:400%;
     border-radius: 20px;
     background-color:darkblue;
     color:gold;
@@ -291,19 +306,112 @@ hr.rounded {
 }
 
 .chapter-div {
-    font-size:xx-large;
+    font-size:350%;
     font-weight: bold;
     color:crimson;
 }
 
 
 
-@media(max-width:1000px) {
+@media(max-width:2500px) {
    /* .navbar-nav{display: none;} */ 
+
+   #main{
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 90%;
+    }
+
+    #memory-title {
+        font-size: 220%;
+    }  
+
+    #title {
+        font-size: 400%;
+        font-weight: bold;
+        color: cornsilk;
+    }
+
+    #chapter-section {
+        display:inline;
+        font-weight: bold;
+        font-size: 120%;
+        width: 85%;
+        white-space:pre;
+    
+    }
+    
+    /* For go to Top button */
+    #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 200px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: crimson; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.8;
+    }
+
+
+    #help {
+        font-size: medium;
+        font-weight: bolder;
+    }
+    
+    #about {
+        font-size: medium;
+        font-weight: bolder;
+    }
+
+    .chapter-div {
+        font-size:xx-large;
+        font-weight: bold;
+        color:crimson;
+    }
+
+    
+
+    .dynamic-div {
+        border-radius: 20px;
+        background-color:darkblue;
+        color:gold;
+        font-weight:bolder;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size:x-large;
+    
+    }
+    
+    .verse-mode {
+        font-size:xx-large;
+        border-radius: 20px;
+        background-color:darkblue;
+        color:gold;
+        font-weight:bolder;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .side-nav a {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #ccc;
+        display: block;
+        transition: 0.3s;
+    }
     
 }
 
-@media(max-width:780px) {  
+@media(max-width:700px) {  
   /*  .open-slide{display: none;} */
 
  #title {
@@ -319,7 +427,7 @@ hr.rounded {
   #chapter-section {
     display: inline;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 97%;
     width: 70%;
   }
 
@@ -327,7 +435,7 @@ hr.rounded {
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 100px; /* Place the button at the bottom of the page */
+    bottom: 200px; /* Place the button at the bottom of the page */
     right: 5px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -354,6 +462,17 @@ hr.rounded {
   #help-info img{
     width: 95%;
   }
+
+  #help {
+    font-size: medium;  
+    font-weight: bolder;
+  }
+
+  #about {
+    font-size: medium;
+    font-weight: bolder;
+  }
+
 
 
     .dynamic-div {
@@ -423,5 +542,13 @@ hr.rounded {
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
+    .side-nav a {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #ccc;
+        display: block;
+        transition: 0.3s;
+    }
     
 }
