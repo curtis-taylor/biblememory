@@ -631,11 +631,12 @@ function test_layout(e) {
             break;
 
         case "ephesians":
-            for(i = 0; i < ephesian_full_data.length; i++) {
-                let t = verse_parser5(ephesian_full_data[i], ephesian_first_data[i], ephesian_blank_data[i], e.target.textContent, i, chapter);
+            for(i = 0; i < ephesians_full_data.length; i++) {
+                let t = verse_parser5(ephesians_full_data[i], ephesians_first_data[i], ephesians_blank_data[i], e.target.textContent, i, chapter);
                 document.getElementById('full_content').insertAdjacentHTML('beforeend', t[0]);
                 chapter = t[1];
             }
+            console.log('ephesians');
             break;
 
         case "philippians":
@@ -792,9 +793,9 @@ function test_layout(e) {
     let quotient = 1;
 
     if(window.screen.width <= 365){
-        quotient = 9;
+        quotient = 8;
     } else if(window.screen.width <= 900) {
-        quotient = 9;
+        quotient = 8;
     } else {
         quotient = 11;
     }
