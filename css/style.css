@@ -119,7 +119,7 @@ body {
 }
 
 #help-info img {
-    width: 80%;
+    width: 90%;
 }
 
 .bible-a-tag {
@@ -154,7 +154,7 @@ hr.rounded {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 22rem;
+    width: 40rem;
     border-radius: 0.5rem;
 }
 .close-button {
@@ -305,6 +305,10 @@ hr.rounded {
     display: none;
 }
 
+.misc_modal_content {
+    display: none;
+}
+
 .chapter-div {
     font-size:350%;
     font-weight: bold;
@@ -408,10 +412,11 @@ hr.rounded {
         display: block;
         transition: 0.3s;
     }
+
     
 }
 
-@media(max-width:700px) {  
+@media(max-width:815px) {  
   /*  .open-slide{display: none;} */
 
  #title {
@@ -460,7 +465,7 @@ hr.rounded {
   }
 
   #help-info img{
-    width: 95%;
+    width: 98%;
   }
 
   #help {
@@ -503,7 +508,7 @@ hr.rounded {
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #00000080;
         opacity: 0;
         visibility: hidden;
         transform: scale(1.1);
@@ -516,8 +521,8 @@ hr.rounded {
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
-        padding: 1rem 1.5rem;
-        width: 17rem;
+        padding: 1rem 1rem;
+        width: 22rem;
         border-radius: 0.5rem;
     }
 
@@ -552,3 +557,145 @@ hr.rounded {
     }
     
 }
+
+@media(max-width:750px) {  
+    /*  .open-slide{display: none;} */
+  
+   #title {
+      font-size: 230%;
+      font-weight: bold;
+      color: cornsilk;
+   }
+  
+    #memory-title {
+      font-size: 110%;
+    }  
+  
+    #chapter-section {
+      display: inline;
+      font-weight: bold;
+      font-size: 97%;
+      width: 70%;
+    }
+  
+    /* For go to Top button */
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 200px; /* Place the button at the bottom of the page */
+      right: 5px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color:crimson; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 5px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      opacity: 0.8;
+    }
+    
+    #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
+  
+    
+  
+    #about-info img{
+      width: 40px;
+    }
+  
+    #help-info img{
+      width: 98%;
+    }
+  
+    #help {
+      font-size: medium;  
+      font-weight: bolder;
+    }
+  
+    #about {
+      font-size: medium;
+      font-weight: bolder;
+    }
+  
+  
+  
+      .dynamic-div {
+          border-radius: 20px;
+          background-color:darkblue;
+          color:gold;
+          font-weight:bolder;
+          padding-left: 20px;
+          padding-bottom: 10px;
+          font-size:130%;
+  
+      }
+  
+      .verse-mode {
+          font-size:x-large;
+          border-radius: 20px;
+          background-color:darkblue;
+          color:gold;
+          font-weight:bolder;
+          padding-left: 20px;
+          padding-bottom: 10px;
+      }
+  
+  
+      .modal {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #00000080;
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(1.1);
+          transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+      }
+  
+      .modal-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 1rem 1rem;
+          width: 20rem;
+          border-radius: 0.5rem;
+      }
+  
+  
+      .close-button {
+          float: right;
+          width: 1.5rem;
+          line-height: 1.5rem;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 0.25rem;
+          background-color: lightgray;
+      }
+      .close-button:hover {
+          background-color: darkgray;
+      }
+  
+      .show-modal {
+          opacity: 1;
+          visibility: visible;
+          transform: scale(1.0);
+          transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+      }
+  
+      .side-nav a {
+          padding: 10px 10px 10px 30px;
+          text-decoration: none;
+          font-size: 22px;
+          color: #ccc;
+          display: block;
+          transition: 0.3s;
+      }
+      
+  }
